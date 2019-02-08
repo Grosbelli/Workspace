@@ -11,7 +11,7 @@ const Header = () => (
                     <a class="nav-item nav-link" href="#contact">Contato</a>
                 </div>
             </div>
-        </nav>
+    </nav>
 
         <nav class="navbar navbar-dark fixed-top navbar-expand-md" id="nav-social">
             <div class="container">
@@ -25,7 +25,7 @@ const Header = () => (
                     </ul>
                 </div>
             </div>
-        </nav>
+         </nav>
     </header>
 
             );
