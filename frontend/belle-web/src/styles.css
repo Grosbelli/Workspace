@@ -1,17 +1,24 @@
-*{
-    margin: 0;
+.app {
     padding: 0;
     outline:0; 
-    box-sizing: border-box;   /* Não faz com que aumente a width e padding dos elementos */
+    box-sizing: border-box;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "header nav"
+}
+
+main-nav.app {
+    grid-area: nav;
+    position: absolute;
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr;
+    /* display:grid;
     grid-template-areas:
-    "header header"
-    "menu content"
-    "menu footer";
+    "header"; */
     font-family: 'Montserrat', sans-serif;    
     background: #fafafa;
     color: #333;

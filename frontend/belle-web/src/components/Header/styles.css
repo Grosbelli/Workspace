@@ -4,10 +4,30 @@ header.main-header {
     font-size: 100px;
     font-weight: bold;
     color: #fff;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     background: #00416A;  
     background: -webkit-linear-gradient(to right, #E4E5E6, #00416A); 
     background: linear-gradient(to right, #E4E5E6, #00416A);
+}
+
+#navst{
+    display: flex;
+    font-size: 13px;
+    /* box-sizing: border-box; */
+    text-transform: uppercase;
+    line-height: 2.7rem;
+    
+}
+
+#main-nav {
+    padding-right: 40px;
+}
+
+
+#nav-social{
+    font-size: 30px;
+    display: table; 
+    
 }
