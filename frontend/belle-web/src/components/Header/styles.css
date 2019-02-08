@@ -1,0 +1,13 @@
+header.main-header {
+    height: 600px;
+    width: 100%;
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00416A;  
+    background: -webkit-linear-gradient(to right, #E4E5E6, #00416A); 
+    background: linear-gradient(to right, #E4E5E6, #00416A);
+}

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline:0; 
+    box-sizing: border-box;   /* Não faz com que aumente a width e padding dos elementos */
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header header"
+    "menu content"
+    "menu footer";
+    font-family: 'Montserrat', sans-serif;    
+    background: #fafafa;
+    color: #333;
+}
