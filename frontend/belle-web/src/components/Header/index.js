@@ -1,28 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './styles.css'
+import Logo from './imgs/LogoCompleto.png'
+import Back from './imgs/BackgroundBelle2.jpg'
+import 'font-awesome/css/font-awesome.min.css'
 
+export default class Header extends Component {
+    render() {
+        return (
+            <header className="main-header" id="header">
+                <section className="sec1"><img src={Back} alt="Background" className="d-block" id="back"></img></section>
+                <section className="sec2"><img src={Logo} alt="Logo" className="d-block" id="logo"></img></section>
+            </header>
 
-const Header = () => (
-    <header className="main-header" id="header">
-    <div id="imagem"><img src="../../.assets/BackgroundBelle2.jpg" alt="" ></img>
-    <div id="logo"></div><img src="../../.assets/LogoCompleto.png" alt=""></img>
-    </div>
-    
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="navst">
-                <div className="navbar-nav ml-auto collapse navbar-collapse" id="main-nav">
-                    <ul className="nav navbar-nav ml-auto" id="list">
-                        <a id="color" href="/" className="nav-link"><i className="fa fa-camera-retro fa-sm"></i></a>
-                        <a id="color" href="/" className="nav-link"><i className="fa fa-twitter fa-lg"></i></a>
-                        <a id="color" href="/" className="nav-link"><i className="fa fa-facebook"></i></a>
-                    </ul>
-                    <a className="nav-item nav-link active" id="color" href="#page-top">Loja <span className="sr-only">(current)</span></a>
-                    <a className="nav-item nav-link" id="color" href="#about-us">Sobre</a>
-                    <a className="nav-item nav-link" id="color" href="#contact">Contato</a>
-                </div>
-    </nav>
-
-    </header>
-
-            );
-            
-export default Header;
+        );
+    }
+}
