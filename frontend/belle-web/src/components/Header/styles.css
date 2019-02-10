@@ -1,5 +1,5 @@
 header.main-header {
-    height: 2000px;
+    height: 600px;
     margin: 0;
     padding: 0;
 }
@@ -13,8 +13,10 @@ img#back{
 }
 
 img#logo{
-    top: 14%;
-    left: 32%;
+    top: 16%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
     z-index: 3;
     position:absolute; 
 }
