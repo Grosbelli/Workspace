@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './styles.css'
 import 'font-awesome/css/font-awesome.min.css'
 import $ from 'jquery'
+import { Link } from 'react-router-dom'
 
 export default class Nav extends Component {
 
@@ -26,10 +27,10 @@ export default class Nav extends Component {
                         <li ><a href="/"><i className="fa fa-facebook fa-lg"></i></a></li>
                     </ul>
                     <ul id="list">
-                        <li className="nav-item" ><a href="#page" id="active">HOME</a></li>
+                        <li className="nav-item" ><Link to="/" id="active">HOME</Link></li>
                         <li className="nav-item" ><a href="/">Loja</a></li>
                         <li className="nav-item" ><a href="/">Sobre</a></li>
-                        <li className="nav-item" ><a href="/">Contato</a></li>
+                        <li className="nav-item" ><Link to="/contato">Contato</Link></li>
                     </ul>
                 </div>
             </nav>
