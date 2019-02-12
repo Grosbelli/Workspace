@@ -69,39 +69,8 @@ nav.white {
     z-index: 4;
 }
 
-@media (min-width: 814px) and (max-width: 1055px){
 
-
-    div ul#social li{
-        display: none;
-    }
-
-    div ul#list li {
-        display: inline-block;
-        text-align: center;
-    }
-
-    div ul#list li a {
-        display: inline-block;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    div ul#list {
-        /* display: flex; */
-        width: 100%;
-        text-align: center;
-        padding: 15px 25px
-    }
-
-    nav.white{
-        padding: 10px 100px;
-    }
-
-}
-
-
-@media (min-width: 814px) and (max-width: 1200px){
+@media (min-width: 815px) and (max-width: 1200px){
     nav{
         height: 75px;
         padding: 0;
@@ -148,7 +117,7 @@ nav.white {
     }
 }
 
-@media (min-width: 576px) and (max-width: 814px){
+@media (min-width: 577px) and (max-width: 814px){
     nav{
         padding: 0;
     }
@@ -203,7 +172,7 @@ nav.white {
     div ul#list {
         width: 100%;
         text-align: center;
-        padding: 15px 25px
+        padding: 15px 15px
     }
 
     div ul li.nav-item {
@@ -216,7 +185,7 @@ nav.white {
 
     div ul li.nav-item a{
         text-align: center;
-        padding: 5px 15px;
+        padding: 5px 10px;
         border-radius: 3px;
     }
 

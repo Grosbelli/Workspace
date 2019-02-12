@@ -34,13 +34,13 @@ section.sec4{
 }
 
 
-@media (min-width: 814px) and (max-width: 1200px){
+@media (min-width: 815px) and (max-width: 1200px){
     img#logo{
         top: 12%;
     }
 }
 
-@media (min-width: 576px) and (max-width: 814px){
+@media (min-width: 577px) and (max-width: 814px){
 
     section.sec1 {
         width: 100%;
