@@ -20,7 +20,7 @@ export default class Nav extends Component {
     render() {
         return (
             <nav>
-                <div id="main-nav">
+                <div className="main-nav" id="main-nav">
                     <ul id="social">
                         <li ><a href="/"><i className="fa fa-camera-retro fa-lg"></i></a></li>
                         <li ><a href="/"><i className="fa fa-twitter fa-lg"></i></a></li>

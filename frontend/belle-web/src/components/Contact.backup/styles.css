@@ -14,7 +14,3 @@ div form div input.name {
 div form div textarea {
     width: 80%;
 }
-
-div form div.row input {
-    margin-bottom: 20px;
-}

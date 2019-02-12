@@ -7,26 +7,51 @@ class Contato extends Component {
         return (
             <div>
                 <Nav />
-                
-                <form>
-                    <div class="form-group">
-                        <label for="nome">Nome:</label> <br />
-                        <input type="text" placeholder="Insira seu nome..."></input>
-                    </div>
-                    <div class="form-group">
-                        <label for="sobrenome">Sobrenome:</label> <br />
-                        <input type="text" placeholder="Insira seu sobrenome..."></input>
-                    </div>
-                    <div class="form-group">
-                        <label for="telefone">Telefone:</label> <br />
-                        <input type="text" placeholder="Insira seu telefone..."></input>
-                    </div>
-                    <div class="form-group">
-                        <label for="textarea">Digite a mensagem.</label> <br />
-                        <textarea rows="5" placeholder="Digite uma mensagem e ser enviada por e-mail..."></textarea>
-                    </div>
-                </form>
-            </div>
+                <div className="container" id="form">
+                    <form>
+                        <div class="row">
+                            <div className="col-lg-12">
+                                <label for="nome">Nome:</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div className="col-lg-12">
+                                <input className="name" type="text" placeholder="Insira seu nome..."></input>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div className="col-lg-12">
+                                <label for="sobrenome">Sobrenome:</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div className="col-lg-12">
+                                <input className="name" type="text" placeholder="Insira seu sobrenome..."></input>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div className="col-lg-12">
+                                <label for="telefone">Telefone:</label>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <input className="tel" type="text" placeholder="Insira seu telefone..."></input>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div className="col-lg-12">
+                                <label for="textarea">Digite a mensagem.</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div className="col-lg-12">
+                                <textarea rows="5" placeholder="Digite uma mensagem e ser enviada por e-mail..."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div >
+            </div >
 
         );
     }

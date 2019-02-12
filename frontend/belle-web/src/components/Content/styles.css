@@ -1,11 +1,14 @@
 /* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
 
 section.image {
+    text-align: center;
     margin-top: 50px;
     height: 800px;
 }
 
 img.imgContent{
+    text-align: center;
+    /* width: 28%; */
     padding: 0 40px;
     padding-bottom: 20px;
 }
@@ -25,3 +28,16 @@ section.content p {
 /* section {
     font-family: 'Montserrat', sans-serif;
 } */
+
+@media(max-width: 576px){
+
+    section.image {
+        width: 100%;
+    }
+
+    img.imgContent{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0 40px;
+    }
+}

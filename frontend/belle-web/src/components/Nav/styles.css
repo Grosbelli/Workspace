@@ -26,6 +26,7 @@ div ul {
 }
 
 div ul li {
+    display: inline;
     list-style: none;
 }
 
@@ -68,3 +69,173 @@ nav.white {
     z-index: 4;
 }
 
+@media (min-width: 814px) and (max-width: 1055px){
+
+
+    div ul#social li{
+        display: none;
+    }
+
+    div ul#list li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    div ul#list li a {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    div ul#list {
+        /* display: flex; */
+        width: 100%;
+        text-align: center;
+        padding: 15px 25px
+    }
+
+    nav.white{
+        padding: 10px 100px;
+    }
+
+}
+
+
+@media (min-width: 814px) and (max-width: 1200px){
+    nav{
+        height: 75px;
+        padding: 0;
+    } 
+    div ul#list {
+        width: 100%;
+        text-align: center;
+        padding: 15px 50px;
+        
+    }
+
+    div ul li.nav-item {
+        display: flex;
+        width: 100%;
+        margin-right: 0;
+        padding: 5px 40px;
+                
+    }
+
+    div ul li.nav-item a{
+        text-align: center;
+        width: 100%;
+        
+        /* padding: 5px 15px; */
+        border-radius: 8px;
+    }
+
+    div ul#social li{
+        display: none;
+    }
+
+    div.main-nav{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav.white {
+        display:block;
+        position: fixed;
+        height: 75px;
+        z-index: 6;
+        padding: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 814px){
+    nav{
+        padding: 0;
+    }
+
+    div ul#list {
+        width: 100%;
+        text-align: center;
+        padding: 15px 25px
+    }
+
+    div ul li.nav-item {
+        display: flex;
+        width: 100%;
+        margin-right: 0;
+        padding: 5px 40px;
+                
+    }
+
+    div ul li.nav-item a{
+        text-align: center;
+        width: 100%;
+        
+        /* padding: 5px 15px; */
+        border-radius: 8px;
+    }
+
+    div ul#social li{
+        display: none;
+    }
+
+    div.main-nav{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav.white {
+        display:block;
+        position: fixed;
+        height: 75px;
+        z-index: 6;
+        padding: 0;
+    }
+}
+
+@media(max-width: 576px){
+
+    nav{
+        padding: 0;
+    }
+
+    div ul#list {
+        width: 100%;
+        text-align: center;
+        padding: 15px 25px
+    }
+
+    div ul li.nav-item {
+        display: flex;
+        width: 100%;
+        padding: 0px 0px 6px 0px;
+        margin-right: 0;
+                
+    }
+
+    div ul li.nav-item a{
+        text-align: center;
+        padding: 5px 15px;
+        border-radius: 3px;
+    }
+
+    div ul#social li{
+        display: none;
+    }
+
+    div.main-nav{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav.white {
+        display:block;
+        position: fixed;
+        height: 60px;
+        z-index: 6;
+        padding: 0;
+    }
+
+}
