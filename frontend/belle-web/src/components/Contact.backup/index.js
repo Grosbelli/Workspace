@@ -14,7 +14,7 @@ class Contato extends Component {
                             <input className="name" type="text" placeholder="Insira seu nome..."></input>
                         </div>
                         <div class="form-group">
-                            <label for="sobrenome">Seu Sobrenome:</label> <br />
+                            <label for="sobrenome">Teste Linux = SeuSobrenome:</label> <br />
                             <input className="name" type="text" placeholder="Insira seu sobrenome..."></input>
                         </div>
                         <div class="form-group">
