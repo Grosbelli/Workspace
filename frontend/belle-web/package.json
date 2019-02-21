@@ -4,7 +4,10 @@
   "private": true,
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@sendgrid/mail": "^6.3.1",
     "bootstrap": "^4.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
     "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
     "jquery": "^3.3.1",
