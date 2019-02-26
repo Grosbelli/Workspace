@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './styles.css';
 import Nav from '../Nav';
+import { isValidEmail } from '../../utils/utils'
+import { Alerta } from '../Alert/alert'
+
 
 const initialState = { 
     email: {
@@ -9,7 +12,7 @@ const initialState = {
         subject: 'Contato Belle Biscuit WEB',
         msg: '',
         nome: '',
-        sobrenome: '',
+        email: '',
         telefone: '',
         text: ''
     }
@@ -22,7 +25,7 @@ class Contato extends Component {
 
         this.onChangeMsg = this.onChangeMsg.bind(this)
         this.onChangeNome = this.onChangeNome.bind(this)
-        this.onChangeSobrenome = this.onChangeSobrenome.bind(this)
+        this.onChangeEmail = this.onChangeEmail.bind(this)
         this.onChangeTelefone = this.onChangeTelefone.bind(this)
 
         this.state = {...initialState}
@@ -35,9 +38,9 @@ class Contato extends Component {
         this.setState( {email: {...email, nome: e.target.value}})
     }
     
-    onChangeSobrenome(e) {
+    onChangeEmail(e) {
         const {email} = this.state
-        this.setState({email: {...email, sobrenome: e.target.value }})
+        this.setState({email: {...email, email: e.target.value }})
     }
     
     onChangeTelefone(e) {
@@ -47,7 +50,7 @@ class Contato extends Component {
     
     onChangeMsg(e) {
         const {email} = this.state
-        this.setState({email: {...email, msg: e.target.value, text: `Contato: ${email.nome} ${email.sobrenome} ******* Telefone: ${email.telefone} *****************  ${email.msg}` }})
+        this.setState({email: {...email, msg: e.target.value, text: `Contato: ${email.nome} ************** <br> ${email.email} *************** Telefone: ${email.telefone} *****************  ${email.msg}` }})
     }
     
     sendEmail = _ => {
@@ -55,6 +58,13 @@ class Contato extends Component {
              
         fetch(`http://localhost:8181/contato?recipient=${email.recipient}&sender=${email.sender}&topic=${email.subject}&text=${email.text}`)
             .catch(err => console.log(err))
+    }
+
+    validarEmail = () => {
+        const email = this.state.email.email;
+        if(!!email && !isValidEmail(email)) {
+                <Alerta />
+        }
     }
 
 
@@ -69,12 +79,12 @@ class Contato extends Component {
                     <form>
                         <div className="row">
                             <div className="col-lg-12">
-                                <label htmlFor="nome">Nome:</label>
+                                <label htmlFor="nome">Nome Completo:</label>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <input className="name" type="text" placeholder="Insira seu nome..."
+                                <input className="name" type="text" placeholder="Insira seu nome completo..."
                                 value={email.nome}
                                 onChange={this.onChangeNome}
                                 ></input>
@@ -82,14 +92,15 @@ class Contato extends Component {
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <label htmlFor="sobrenome">Sobrenome:</label>
+                                <label htmlFor="email">E-mail:</label>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <input className="name" type="text" placeholder="Insira seu sobrenome..."
-                                value={email.sobrenome}
-                                onChange={this.onChangeSobrenome}
+                                <input className="name" type="text" placeholder="Insira seu email..."
+                                value={email.email}
+                                onChange={this.onChangeEmail}
+                                onBlur={this.validarEmail}
                                 ></input>
                             </div>
                         </div>
