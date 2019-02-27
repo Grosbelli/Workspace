@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './styles.css';
 import Nav from '../Nav';
 import { isValidEmail } from '../../utils/utils'
-import { Alerta } from '../Alert/alert'
 
 
 const initialState = { 
@@ -63,7 +62,7 @@ class Contato extends Component {
     validarEmail = () => {
         const email = this.state.email.email;
         if(!!email && !isValidEmail(email)) {
-                <Alerta />
+                
         }
     }
 
